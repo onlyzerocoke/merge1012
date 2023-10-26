@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="stylesheet" href="./css/./swiper-bundle.min.css">
+    <link rel="stylesheet/less" href="./css/detail.less">
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html"> <div class="leftArrow"><</div></a>
+    
+     <img src="./images/logo.png" alt="">
+     <div></div>
+    </header>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://dn-kdt-img.qbox.me/upload_files/2016/03/09/FpFyH9z-IsdCNcvxNIOLVHtwuyq_.jpg?imageView2/2/w/980/h/980/q/75/format/jpg" alt=""></div>
+            <div class="swiper-slide"><img src="https://img.yzcdn.cn/upload_files/2016/03/09/FlVblvZUBEpGL9DtUNy1Iqvl2fIw.jpg!730x0.jpg" alt=""></div>
+
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+    <div class="goodsInfoOuterContainer">
+
+        <div class="goodsInfoContainer">
+            <p>天堂雨伞 精致黑伞 (1把装)</p>
+    
+            <div class="moneyContaienr">
+    
+             <p>
+                 <span class="yuan">￥</span>15.90
+             </p>
+    
+             <div class="damp">
+    
+                <p class="express">邮</p>
+                <p>￥20.00</p>
+               
+             </div>
+    
+            </div>
+    
+            <p class="remain">已经领取: 200 剩余: 1800</p>
+    
+        </div>  
+    </div>
+
+
+    <div class="sizeContainer">
+
+        <div class="size">
+            <p>
+                规格:<span class="sizeColor">蓝色</span>
+            </p>
+    
+            <p class="sizeArrow">
+                >
+            </p>
+        </div>
+
+    </div>
+
+    <div class="imgeContainer">
+ 
+        <input type="radio" id="rd1" name="rd" checked>
+        <input type="radio" id="rd2" name="rd">
+
+        <div class="toggleContainer">
+            <label for="rd1">
+                <p class="goodsDetail">商品详细</p>
+            </label>
+
+            <label for="rd2">
+                <p class="goodsRecore">兑换记录</p>
+            </label>
+        </div>
+
+        <div class="imageContent">
+            <img src="https://dn-kdt-img.qbox.me/upload_files/2016/03/09/FpFyH9z-IsdCNcvxNIOLVHtwuyq_.jpg?imageView2/2/w/980/h/980/q/75/format/jpg" alt="">
+             <img src="https://img.yzcdn.cn/upload_files/2016/03/09/FlVblvZUBEpGL9DtUNy1Iqvl2fIw.jpg!730x0.jpg" alt="">
+             <img src="https://img.yzcdn.cn/upload_files/2016/03/09/FpB0aR6biQEx32OjpLCTMqowrCYR.jpg?imageView2/2/w/730/h/0/q/75/format/jpg" alt="">
+        </div>
+
+        
+
+    </div>
+
+    <div class="buyContainer">
+     
+            <div class="iconImageContainer">
+             <img src="./images/kefu.svg" alt="">
+            </div>
+    
+            <p class="buyNowContainer">
+                   立即购买
+            </p>
+        </div>
+
+    
+</body>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/less.js"></script>
+
+<script>
+    var mySwiper = new Swiper ('.swiper', {
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+      clickable:true
+    },
+    
+
+
+  })        
+</script>
+</html>

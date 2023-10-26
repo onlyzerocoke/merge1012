@@ -1,0 +1,1436 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f7f7;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #dfc38d, #c6a769);
+}
+
+.userInfoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    padding: 35px 0px;
+
+    .userContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 1250px;
+
+        .avatar {
+            width: 53px;
+            height: 53px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+
+        }
+
+        .avatar img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+
+    .dailyContainer {
+        height: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #bb9951;
+        border-radius: 80px;
+        font-size: 12px;
+        padding: 0px 10px;
+
+        .gold img {
+            width: 13px;
+            height: 13px;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.vip {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../images/nav.png') no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 10px 30px;
+    transform: translate(20px, -20px);
+
+    .vipLeftBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #f1d8ae;
+
+        .vipWord {
+            & p:nth-child(1) {
+                font-weight: 600;
+                font-size: 15px;
+            }
+
+            & p:nth-child(2) {
+
+                font-size: 12px;
+            }
+        }
+
+        img {
+            width: 23px;
+            height: 23px;
+            margin-right: 10px;
+        }
+    }
+
+    .vipRightBox {
+        background: linear-gradient(to right, #caa666, #edd0a5);
+        color: #3c2008;
+        padding: 2px 5px;
+        font-size: 15px;
+        border-radius: 2px;
+
+    }
+}
+
+.list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    padding:20px 0px;
+    .word{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 50px;
+        & p:nth-child(1){
+            margin-right: 1200px;
+        }
+
+        & p:nth-child(2)
+        {
+            color: #7f8699;
+            font-size: 14px;
+        }
+    }
+
+    .listFunc{
+        width: 72%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        margin-left: 200px;
+        margin-top: 25px;
+        
+        // background-color: red;
+        .listItem{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // margin-right: 250px;
+            .listImage{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .listImage img{
+                width: 25px;
+                height: 28px;
+            }
+
+            & p{
+                margin-top: 6px;
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+.tailFunc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    margin-top: 15px;
+    padding: 20px 0px;
+
+    .tailItem{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       width: 98%;
+       padding-bottom: 10px;
+       border-bottom: 1px solid #eeeeee;
+       margin-bottom: 15px;
+        .tailItemLeftBox{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #7a7a77;
+            font-size: 13px;
+            img{
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+            }
+
+            & p{
+                margin-top: -5px;
+            }
+        }
+
+        .tailItemRightBox{
+            color: #a0a0a0;
+        }
+    }
+}
+
+.recommand{
+    font-size: 25px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+
+
+.goodsImage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width:95%;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    .goodsImageItem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+
+        img{
+            width: 700px;
+            height: 700px;
+            border-radius: 20px;
+        }
+    }
+}
+
+.tabbarContainer {
+    width: 100%;
+    display: flex;
+    background-color: #f9f9f9;
+    justify-content: space-between;
+    align-items: center;
+    // margin-left: 120px;
+    // margin-top: 400px;
+    position: fixed;
+    bottom: 0;
+
+    .tabbarItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 400px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        span {
+            font-size: 20px;
+            color: #8F8B8A;
+        }
+    }
+
+}
+
+@media screen and(max-width:376px)
+{
+    header{
+        padding: 20px;
+    }
+    .userInfoContainer{
+        padding: 5px 0px;
+    }
+
+    .userInfoContainer .userContainer{
+        margin-right: 140px;
+    }
+
+    .userInfoContainer .userContainer .avatar{
+        width: 43px;
+        height: 43px;
+    }
+
+    .userInfoContainer .userContainer .avatar img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .vip{
+        width: 80%;
+        transform: translate(2px,-14px);
+    }
+
+    .vip .vipRightBox{
+        padding: 2px 4px;
+        font-size: 13px;
+    }
+
+    .list{
+        padding: 11px 0px;
+    }
+
+    .list .word{
+        margin-left: 20px;
+    }
+
+    .list .word p:nth-child(1)
+    {
+        margin-right: 180px;
+        font-size: 14px;
+    }
+
+    .list .listFunc{
+        width: 86%;
+        margin-left: 20px;
+    }
+
+    .list .listFunc .listItem .listImage img{
+        width: 22px;
+        height: 25px;
+    }
+
+    .list .listFunc .listItem p{
+        font-size: 13px;
+    }
+
+    .tailFunc{
+        padding: 10px 0px;
+    }
+    .tailFunc .tabbarItem{
+        width: 100%;
+
+    }
+
+    .tailFunc .tabbarItem .tailItemLeftBox{
+        margin-left: 20px;
+    }
+
+    .tailFunc .tailItem .tailItemRightBox {
+        transform: translate(-30px,0px);
+    }
+
+    .tailFunc .tailItem:last-child{
+        margin-bottom: 0px;
+    }
+
+    .recommand{
+        font-size: 18px;
+    }
+
+    .goodsImage .goodsImageItem img{
+        width: 170px;
+        height: 180px;
+    }
+
+    .goodsImage{
+        margin: none;
+        margin-bottom: 100px;
+    }
+    
+    .tabbarContainer .tabbarItem{
+        margin-right: 0px;
+    }
+
+    .tabbarContainer .tabbarItem span{
+        font-size: 15px;
+    }
+
+}
+
+
+@media (min-width:377px) and (max-width:769px)
+{
+
+    header{
+        padding: 20px;
+    }
+    .userInfoContainer{
+        padding: 5px 0px;
+        font-size: 30px;
+    }
+
+    .userInfoContainer .userContainer{
+        margin-right: 354px;
+    }
+
+    .userInfoContainer .dailyContainer{
+        font-size: 25px;
+        padding: 10px 20px;
+    }
+
+    .userInfoContainer .dailyContainer .gold img{
+        width: 23px;
+        height: 23px;
+        margin-top: 9px;
+    }
+
+    .userInfoContainer .userContainer .avatar{
+        width: 90px;
+        height: 90px;
+        margin-right: 15px;
+    }
+
+    .userInfoContainer .userContainer .avatar img{
+        width: 85px;
+        height: 85px;
+    }
+
+
+
+    .vip{
+        width: 83%;
+        transform: translate(2px,-14px);
+    }
+
+    .vip .vipRightBox{
+        padding: 2px 4px;
+        font-size: 30px;
+        border-radius: 5px;
+    }
+
+    .vip .vipLeftBox img{
+        width: 43px;
+        height: 43px;
+    }
+
+    .vip .vipLeftBox .vipWord p:nth-child(1)
+    {
+        font-size: 25px;
+    }
+
+    .vip .vipLeftBox .vipWord p:nth-child(2)
+    {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+
+    
+    .list{
+        padding: 11px 0px;
+    }
+
+    .list .word{
+        margin-left: 36px;
+        font-size: 25px;
+    }
+
+    .list .word p:nth-child(1)
+    {
+        margin-right: 443px;
+    }
+
+    .list .word p:nth-child(2)
+    {
+        font-size: 24px;
+    }
+
+    .list .listFunc{
+        width: 86%;
+        margin-left: 43px;
+    }
+
+    .list .listFunc .listItem .listImage img{
+        width: 35px;
+        height: 40px;
+    }
+
+    .list .listFunc .listItem p{
+        font-size: 18px;
+    }
+
+    .tailFunc{
+        padding: 10px 0px;
+    }
+
+    .tailFunc .tabbarItem{
+        width: 100%;
+
+    }
+
+    .tailFunc .tailItem .tailItemLeftBox{
+        margin-left: 2px;
+        font-size: 26px;
+    }
+    
+    .tailFunc .tailItem .tailItemLeftBox img{
+        width: 40px;
+        height: 40px;
+        margin-right: 9px;
+    }
+
+    .tailFunc .tailItem .tailItemRightBox {
+        transform: translate(-10px,0px);
+        font-size: 35px;
+    }
+
+    .tailFunc .tailItem:last-child{
+        margin-bottom: 0px;
+    }
+
+    .recommand{
+        font-size: 18px;
+    }
+
+    .goodsImage .goodsImageItem img{
+        width: 170px;
+        height: 180px;
+    }
+
+    .goodsImage{
+        margin: none;
+        margin-bottom: 100px;
+    }
+    
+    .tabbarContainer .tabbarItem{
+        margin-right: 0px;
+    }
+
+    .recommand{
+        font-size: 30px;
+    }
+
+    .goodsImage .goodsImageItem img{
+        width: 340px;
+        height: 350px;
+    }
+
+    .iconfont{
+        font-size: 41px;
+    }
+
+    .tabbarContainer .tabbarItem span{
+        font-size: 27px;
+    }
+
+}
+
+@media (min-width:770px) and (max-width:1025px)
+{
+    
+    header{
+        padding: 20px;
+    }
+    .userInfoContainer{
+        padding: 5px 0px;
+        font-size: 30px;
+        margin-left: 0px;
+    }
+
+    .userInfoContainer .userContainer{
+        margin-right: 597px;
+    }
+
+    .userInfoContainer .dailyContainer{
+        font-size: 25px;
+        padding: 10px 20px;
+    }
+
+    .userInfoContainer .dailyContainer .gold img{
+        width: 23px;
+        height: 23px;
+        margin-top: 9px;
+    }
+
+    .userInfoContainer .userContainer .avatar{
+        width: 90px;
+        height: 90px;
+        margin-right: 15px;
+    }
+
+    .userInfoContainer .userContainer .avatar img{
+        width: 85px;
+        height: 85px;
+    }
+
+
+
+    .vip{
+        width: 87%;
+        transform: translate(0px,-14px);
+    }
+
+    .vip .vipRightBox{
+        padding: 2px 4px;
+        font-size: 30px;
+        border-radius: 5px;
+    }
+
+    .vip .vipLeftBox img{
+        width: 43px;
+        height: 43px;
+    }
+
+    .vip .vipLeftBox .vipWord p:nth-child(1)
+    {
+        font-size: 25px;
+    }
+
+    .vip .vipLeftBox .vipWord p:nth-child(2)
+    {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+
+    
+    .list{
+        padding: 11px 0px;
+    }
+
+    .list .word{
+        margin-left: 36px;
+        font-size: 25px;
+    }
+
+    .list .word p:nth-child(1)
+    {
+        margin-right: 683px;
+    }
+
+    .list .word p:nth-child(2)
+    {
+        font-size: 24px;
+    }
+
+    .list .listFunc{
+        width: 86%;
+        margin-left: 56px;
+    }
+
+    .list .listFunc .listItem .listImage img{
+        width: 45px;
+        height: 51px;
+    }
+
+    .list .listFunc .listItem p{
+        font-size: 23px;
+    }
+
+    .tailFunc{
+        padding: 10px 0px;
+    }
+
+    .tailFunc .tabbarItem{
+        width: 100%;
+
+    }
+
+    .tailFunc .tailItem .tailItemLeftBox{
+        margin-left: 2px;
+        font-size: 26px;
+    }
+    
+    .tailFunc .tailItem .tailItemLeftBox img{
+        width: 40px;
+        height: 40px;
+        margin-right: 9px;
+    }
+
+    .tailFunc .tailItem .tailItemRightBox {
+        transform: translate(-22px,0px);
+        font-size: 35px;
+    }
+
+    .tailFunc .tailItem:last-child{
+        margin-bottom: 0px;
+    }
+
+    .recommand{
+        font-size: 42px;
+    }
+
+    .goodsImage .goodsImageItem img{
+        width: 470px;
+        height: 447px;
+    }
+
+    .goodsImage{
+        margin: none;
+        margin-left: 0px;
+        margin-bottom: 100px;
+        margin: 20px auto;
+    }
+    
+    .tabbarContainer .tabbarItem{
+        margin-right: 0px;
+    }
+
+    .recommand{
+        font-size: 47px;
+    }
+
+    .goodsImage .goodsImageItem img{
+        width: 450px;
+        height: 550px;
+    }
+
+    .iconfont{
+        font-size: 61px;
+    }
+
+    .tabbarContainer .tabbarItem span{
+        font-size: 32px;
+    }
+}
+
+@media (min-width:1026px) and (max-width:1281px)
+{
+    
+    header{
+        padding: 20px;
+    }
+    .userInfoContainer{
+        padding: 5px 0px;
+        font-size: 42px;
+        margin-left: 0px;
+    }
+
+    .userInfoContainer .userContainer{
+        margin-right: 702px;
+    }
+
+    .userInfoContainer .dailyContainer{
+        font-size: 36px;
+        padding: 24px 20px;
+    }
+
+    .userInfoContainer .dailyContainer .gold img{
+        width: 33px;
+        height: 34px;
+        margin-top: 9px;
+        margin-right: 10px;
+    }
+
+    .userInfoContainer .userContainer .avatar{
+        width: 115px;
+        height: 115px;
+        margin-right: 15px;
+    }
+
+    .userInfoContainer .userContainer .avatar img{
+        width: 105px;
+        height: 105px;
+    }
+
+
+
+    .vip{
+        width: 87%;
+        transform: translate(0px,-14px);
+    }
+
+    .vip .vipRightBox{
+        padding: 2px 4px;
+        font-size: 42px;
+        border-radius: 5px;
+    }
+
+    .vip .vipLeftBox img{
+        width: 65px;
+        height: 63px;
+    }
+
+    .vip .vipLeftBox .vipWord p:nth-child(1)
+    {
+        font-size: 36px;
+    }
+
+    .vip .vipLeftBox .vipWord p:nth-child(2)
+    {
+        font-size: 32px;
+        margin-top: 5px;
+    }
+
+
+    
+    .list{
+        padding: 11px 0px;
+    }
+
+    .list .word{
+        margin-left: 58px;
+        font-size: 45px;
+    }
+
+    .list .word p:nth-child(1)
+    {
+        margin-right: 726px;
+    }
+
+    .list .word p:nth-child(2)
+    {
+        font-size: 40px;
+    }
+
+    .list .listFunc{
+        width: 86%;
+        margin-left: 70px;
+    }
+
+    .list .listFunc .listItem .listImage img{
+        width: 66px;
+        height: 75px;
+    }
+
+    .list .listFunc .listItem p{
+        font-size: 30px;
+    }
+
+    .tailFunc{
+        padding: 10px 0px;
+    }
+
+    .tailFunc .tabbarItem{
+        width: 100%;
+
+    }
+
+    .tailFunc .tailItem .tailItemLeftBox{
+        margin-left: 2px;
+        font-size: 35px;
+    }
+    
+    .tailFunc .tailItem .tailItemLeftBox img{
+        width: 54px;
+        height: 55px;
+        margin-right: 9px;
+    }
+
+    .tailFunc .tailItem .tailItemRightBox {
+        transform: translate(-22px,0px);
+        font-size: 35px;
+    }
+
+    .tailFunc .tailItem:last-child{
+        margin-bottom: 0px;
+    }
+
+    .recommand{
+        font-size: 60px;
+    }
+
+    .goodsImage .goodsImageItem img{
+        width: 583px;
+        height: 650px;
+    }
+
+    .goodsImage{
+        margin: none;
+        margin-left: 0px;
+        margin-bottom: 100px;
+        margin: 20px auto;
+    }
+    
+    .tabbarContainer .tabbarItem{
+        margin-right: 0px;
+    }
+
+    .recommand{
+        font-size: 47px;
+    }
+
+    .goodsImage .goodsImageItem img{
+        width: 450px;
+        height: 550px;
+    }
+
+    .iconfont{
+        font-size: 61px;
+    }
+
+    .tabbarContainer .tabbarItem span{
+        font-size: 32px;
+    }
+}
+
+@media (min-width:1281px) and (max-width:1441px)
+{
+      
+    header{
+        padding: 20px;
+    }
+    .userInfoContainer{
+        padding: 5px 0px;
+        font-size: 42px;
+        margin-left: 0px;
+    }
+
+    .userInfoContainer .userContainer{
+        margin-right: 858px;
+    }
+
+    .userInfoContainer .dailyContainer{
+        font-size: 36px;
+        padding: 24px 20px;
+    }
+
+    .userInfoContainer .dailyContainer .gold img{
+        width: 33px;
+        height: 34px;
+        margin-top: 9px;
+        margin-right: 10px;
+    }
+
+    .userInfoContainer .userContainer .avatar{
+        width: 125px;
+        height: 125px;
+        margin-right: 15px;
+    }
+
+    .userInfoContainer .userContainer .avatar img{
+        width: 115px;
+        height: 115px;
+    }
+
+
+
+    .vip{
+        width: 88%;
+        transform: translate(0px,-14px);
+    }
+
+    .vip .vipRightBox{
+        padding: 2px 4px;
+        font-size: 42px;
+        border-radius: 5px;
+    }
+
+    .vip .vipLeftBox img{
+        width: 65px;
+        height: 63px;
+    }
+
+    .vip .vipLeftBox .vipWord p:nth-child(1)
+    {
+        font-size: 36px;
+    }
+
+    .vip .vipLeftBox .vipWord p:nth-child(2)
+    {
+        font-size: 32px;
+        margin-top: 5px;
+    }
+
+
+    
+    .list{
+        padding: 11px 0px;
+    }
+
+    .list .word{
+        margin-left: 58px;
+        font-size: 45px;
+    }
+
+    .list .word p:nth-child(1)
+    {
+        margin-right: 881px;
+    }
+
+    .list .word p:nth-child(2)
+    {
+        font-size: 40px;
+    }
+
+    .list .listFunc{
+        width: 86%;
+        margin-left: 70px;
+    }
+
+    .list .listFunc .listItem .listImage img{
+        width: 66px;
+        height: 75px;
+    }
+
+    .list .listFunc .listItem p{
+        font-size: 30px;
+    }
+
+    .tailFunc{
+        padding: 10px 0px;
+    }
+
+    .tailFunc .tabbarItem{
+        width: 100%;
+
+    }
+
+    .tailFunc .tailItem .tailItemLeftBox{
+        margin-left: 2px;
+        font-size: 40px;
+    }
+    
+    .tailFunc .tailItem .tailItemLeftBox img{
+        width: 54px;
+        height: 55px;
+        margin-right: 9px;
+    }
+
+    .tailFunc .tailItem .tailItemRightBox {
+        transform: translate(-22px,0px);
+        font-size: 46px;
+    }
+
+    .tailFunc .tailItem:last-child{
+        margin-bottom: 0px;
+    }
+
+    .recommand{
+        font-size: 60px;
+    }
+
+    .goodsImage .goodsImageItem img{
+        width: 583px;
+        height: 650px;
+    }
+
+    .goodsImage{
+        margin: none;
+        margin-left: 0px;
+        margin-bottom: 100px;
+        margin: 20px auto;
+    }
+    
+    .tabbarContainer .tabbarItem{
+        margin-right: 0px;
+    }
+
+    .recommand{
+        font-size: 54px;
+    }
+
+    .goodsImage .goodsImageItem img{
+        width: 450px;
+        height: 558px;
+    }
+
+    .iconfont{
+        font-size: 75px;
+    }
+
+    .tabbarContainer .tabbarItem span{
+        font-size: 36px;
+    }
+}
+
+// @media (min-width:1442px) and (max-width:1600px)
+// {
+      
+//     header{
+//         padding: 20px;
+//     }
+//     .userInfoContainer{
+//         padding: 5px 0px;
+//         font-size: 42px;
+//         margin-left: 0px;
+//     }
+
+//     .userInfoContainer .userContainer{
+//         margin-right: 858px;
+//     }
+
+//     .userInfoContainer .dailyContainer{
+//         font-size: 36px;
+//         padding: 24px 20px;
+//     }
+
+//     .userInfoContainer .dailyContainer .gold img{
+//         width: 33px;
+//         height: 34px;
+//         margin-top: 9px;
+//         margin-right: 10px;
+//     }
+
+//     .userInfoContainer .userContainer .avatar{
+//         width: 125px;
+//         height: 125px;
+//         margin-right: 15px;
+//     }
+
+//     .userInfoContainer .userContainer .avatar img{
+//         width: 115px;
+//         height: 115px;
+//     }
+
+
+
+//     .vip{
+//         width: 88%;
+//         transform: translate(0px,-14px);
+//     }
+
+//     .vip .vipRightBox{
+//         padding: 2px 4px;
+//         font-size: 42px;
+//         border-radius: 5px;
+//     }
+
+//     .vip .vipLeftBox img{
+//         width: 65px;
+//         height: 63px;
+//     }
+
+//     .vip .vipLeftBox .vipWord p:nth-child(1)
+//     {
+//         font-size: 36px;
+//     }
+
+//     .vip .vipLeftBox .vipWord p:nth-child(2)
+//     {
+//         font-size: 32px;
+//         margin-top: 5px;
+//     }
+
+
+    
+//     .list{
+//         padding: 11px 0px;
+//     }
+
+//     .list .word{
+//         margin-left: 58px;
+//         font-size: 45px;
+//     }
+
+//     .list .word p:nth-child(1)
+//     {
+//         margin-right: 881px;
+//     }
+
+//     .list .word p:nth-child(2)
+//     {
+//         font-size: 40px;
+//     }
+
+//     .list .listFunc{
+//         width: 86%;
+//         margin-left: 70px;
+//     }
+
+//     .list .listFunc .listItem .listImage img{
+//         width: 66px;
+//         height: 75px;
+//     }
+
+//     .list .listFunc .listItem p{
+//         font-size: 30px;
+//     }
+
+//     .tailFunc{
+//         padding: 10px 0px;
+//     }
+
+//     .tailFunc .tabbarItem{
+//         width: 100%;
+
+//     }
+
+//     .tailFunc .tailItem .tailItemLeftBox{
+//         margin-left: 2px;
+//         font-size: 40px;
+//     }
+    
+//     .tailFunc .tailItem .tailItemLeftBox img{
+//         width: 54px;
+//         height: 55px;
+//         margin-right: 9px;
+//     }
+
+//     .tailFunc .tailItem .tailItemRightBox {
+//         transform: translate(-22px,0px);
+//         font-size: 46px;
+//     }
+
+//     .tailFunc .tailItem:last-child{
+//         margin-bottom: 0px;
+//     }
+
+//     .recommand{
+//         font-size: 60px;
+//     }
+
+//     .goodsImage .goodsImageItem img{
+//         width: 583px;
+//         height: 650px;
+//     }
+
+//     .goodsImage{
+//         margin: none;
+//         margin-left: 0px;
+//         margin-bottom: 100px;
+//         margin: 20px auto;
+//     }
+    
+//     .tabbarContainer .tabbarItem{
+//         margin-right: 0px;
+//     }
+
+//     .recommand{
+//         font-size: 54px;
+//     }
+
+//     .goodsImage .goodsImageItem img{
+//         width: 450px;
+//         height: 558px;
+//     }
+
+//     .iconfont{
+//         font-size: 75px;
+//     }
+
+//     .tabbarContainer .tabbarItem span{
+//         font-size: 36px;
+//     }
+// }
+
+@media (min-width:1601px) and (max-width:1920px)
+{
+      
+    header{
+        padding: 20px;
+    }
+    .userInfoContainer{
+        padding: 5px 0px;
+        font-size: 58px;
+        margin-left: 0px;
+    }
+
+    .userInfoContainer .userContainer{
+        margin-right: 1143px;
+    }
+
+    .userInfoContainer .dailyContainer{
+        font-size: 49px;
+        padding: 30px 25px;
+    }
+
+    .userInfoContainer .dailyContainer .gold img{
+        width: 49px;
+        height: 46px;
+        margin-top: 9px;
+        margin-right: 10px;
+    }
+
+    .userInfoContainer .userContainer .avatar{
+        width: 145px;
+        height: 145px;
+        margin-right: 15px;
+    }
+
+    .userInfoContainer .userContainer .avatar img{
+        width: 135px;
+        height: 135px;
+    }
+
+
+
+    .vip{
+        width: 88%;
+        transform: translate(0px,-14px);
+    }
+
+    .vip .vipRightBox{
+        padding: 2px 4px;
+        font-size: 59px;
+        border-radius: 5px;
+    }
+
+    .vip .vipLeftBox img{
+        width: 88px;
+        height: 85px;
+    }
+
+    .vip .vipLeftBox .vipWord p:nth-child(1)
+    {
+        font-size: 50px;
+    }
+
+    .vip .vipLeftBox .vipWord p:nth-child(2)
+    {
+        font-size: 48px;
+        margin-top: 5px;
+    }
+
+
+    
+    .list{
+        padding: 11px 0px;
+    }
+
+    .list .word{
+        margin-left: 58px;
+        font-size: 64px;
+    }
+
+    .list .word p:nth-child(1)
+    {
+        margin-right: 1167px;
+    }
+
+    .list .word p:nth-child(2)
+    {
+        font-size: 56px;
+    }
+
+    .list .listFunc{
+        width: 86%;
+        margin-left: 70px;
+    }
+
+    .list .listFunc .listItem .listImage img{
+        width: 80px;
+        height: 94px;
+    }
+
+    .list .listFunc .listItem p{
+        font-size: 44px;
+    }
+
+    .tailFunc{
+        padding: 10px 0px;
+        margin-top: 22px;
+    }
+
+    .tailFunc .tabbarItem{
+        width: 100%;
+
+    }
+
+    .tailFunc .tailItem .tailItemLeftBox{
+        margin-left: 2px;
+        font-size: 55px;
+    }
+    
+    .tailFunc .tailItem .tailItemLeftBox img{
+        width: 68px;
+        height: 71px;
+        margin-right: 9px;
+    }
+
+    .tailFunc .tailItem .tailItemRightBox {
+        transform: translate(-22px,0px);
+        font-size: 64px;
+    }
+
+    .tailFunc .tailItem:last-child{
+        margin-bottom: 0px;
+    }
+
+    .recommand{
+        font-size: 78px;
+    }
+
+    .goodsImage .goodsImageItem img{
+        width: 542px;
+        height: 649px;
+    }
+
+    .goodsImage{
+        margin: none;
+        margin-left: 0px;
+        margin-bottom: 100px;
+        margin: 20px auto;
+        margin-bottom: 200px;
+    }
+    
+    .tabbarContainer .tabbarItem{
+        margin-right: 0px;
+    }
+
+    .recommand{
+        font-size: 54px;
+    }
+
+    .goodsImage .goodsImageItem img{
+        width: 589px;
+        height: 652px;
+    }
+
+    .iconfont{
+        font-size: 104px;
+    }
+
+    .tabbarContainer .tabbarItem span{
+        font-size: 48px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.tabbarContainer {
+    width: 100%;
+    display: flex;
+    background-color: #f9f9f9;
+    justify-content: space-between;
+    align-items: center;
+    // margin-left: 120px;
+    // margin-top: 400px;
+    position: fixed;
+    bottom: 0;
+
+    .tabbarItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 400px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        span {
+            font-size: 20px;
+            color: #8F8B8A;
+        }
+    }
+
+}

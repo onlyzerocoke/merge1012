@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet/less" href="./css/personInfo.less">
+</head>
+
+<body>
+    <header>
+        <div class="userInfoContainer">
+
+            <div class="userContainer">
+                <div class="avatar">
+                    <img src="./images/user.png" alt="">
+                </div>
+
+                <p>李嘉桦</p>
+            </div>
+
+            <div class="dailyContainer">
+
+                <div class="gold">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAZCAIAAAC6gEm5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDJGQTU4RUY4NjY2MTFFOTlCQ0ZDMzc2ODdBMTI5NEMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDJGQTU4RjA4NjY2MTFFOTlCQ0ZDMzc2ODdBMTI5NEMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0MkZBNThFRDg2NjYxMUU5OUJDRkMzNzY4N0ExMjk0QyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0MkZBNThFRTg2NjYxMUU5OUJDRkMzNzY4N0ExMjk0QyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpSdAPIAAAO/SURBVHjaZFTbbhtHDCVnuLfo5joOFLgFGsBAmuc+9Fv6d/2AfkV/oEVfCqRB2gZJFQuWbVkX787OhSVnJQVGVwJ2doeHe8hzOPjLTz+CXAbG48vp5Hwy/aqpp1Q0aEtblEQkmyGE6HuOffBt2222m/vN9m63W0BSKFFRffvq+5fz76CqLBpgvRBRNyWEWW5lUUJRy0K2pojzrzFyAueul28//PMrtn/8XI/mYAKwAcxpT5e8OV3/35I3ibr9ksrKJQNGo9NTWJKgAaev+HA/phOCRoACJ/PwO9QLKC+hmMum/A7RjLIwQ0W5HN3SvPKYC/QL0y+guyFAH921ddeABKZJdmpoxLYAJsbCYKU4dsgeMGD0KexN3EBqgUMEsJiIwUodCYJJnjli3HF/KAqRBa0Lg0oKMq38CjklFKoCR3J9qgtZGEZFKnuISpqNrBgPDUIeWhBzImQkyYUcO8/mt3fL5cYlTTrgYehdBqcsMesCE5/EUUqCSAIUOPmY3v69eo92Nimno3L8TPxkxVGW0JihhZpRtImBxWN9iLtHv9n3D9s+cJTKaNKU272Th9Wmu9s6Tig1ce6CBbSaBmJKcZBHNnKA0BsoC5zeXD1f3GxXyy4ksRxD9qeWCxQhctReJNWaWAJAOyY1ESIZupjXly8m1Bi8ms+u5tOHLu723b71XR9dkA+nGA7eIgOW2BiqyNalHTXFeFTPapvrZDo4BnFal7OatHBWgbIdDsMivI4eE2uhaio+wGQGxX3e0SZzzO3O6mY7mpwA4YtHcxmaXYJzL8RwYN59uHfeaJ/USapVTqkveFD3oLFSghyQHzVCgAKnm/t+vf73/OzZ2YSm46auxNopx1o4euHJo7Gt85tdu96Gu/WjZ0sNhTbA6m53ey8fWoO1VVUWVnaYjLWZtkglekl3fUTneohRSeg4oMDp9auLPz9tfedingpI0T22vUaogU/ng8mdFZgyzBVZwdfV628mNBtXP7yp1ju32rr9vmu7EHyKB/an21CbHhglmaam0ai+mFRn40o+Qnm4eDZuzkYF4FSGQTj7kLKjhb0SkXosGTFqIX4yVmdOXCiHA0QZYnIeSuHEkXWidcALa+SfvUBwlDN9OVCPgotZEXsP5q9Pq54LRnvi/cQLQibLfPIInk5PtAIUON3eP262719enL94XpVUCNthfpCHYHs4R7M1hsNCcvY+3Nzur1d3PgAlsC7ix8/rj5+xrKy0qqkLmQVSXU1hNIVXRVMQRUNsOy8t71VATkYH4j8BBgB7cV04ESqkEQAAAABJRU5ErkJggg=="
+                        alt="">
+                </div>
+
+                <p>每日签到</p>
+
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <div class="vip">
+
+        <div class="vipLeftBox">
+
+            <div class="vipImage">
+                <img src="./images/sd.png" alt="">
+            </div>
+
+            <div class="vipWord">
+                <p>免费试用超级会员30天</p>
+                <p> 可享95折专享价免邮费每日闪购等权益</p>
+
+            </div>
+
+        </div>
+
+        <p class="vipRightBox">
+            30天
+        </p>
+
+    </div>
+
+
+    <div class="list">
+
+        <div class="word">
+            <p>我的订单</p>
+            <p>查看全部订单 ></p>
+        </div>
+
+        <div class="listFunc">
+            <div class="listItem">
+
+                <div class="listImage">
+                    <img src="./images/item_01.png" alt="">
+                </div>
+
+                <p>待付款</p>
+            </div>
+
+            <div class="listItem">
+
+                <div class="listImage">
+                    <img src="./images/item_02.png" alt="">
+                </div>
+
+                <p>待发货</p>
+            </div>
+
+            <div class="listItem">
+
+                <div class="listImage">
+                    <img src="./images/item_03.png" alt="">
+                </div>
+
+                <p>待收货</p>
+            </div>
+
+            <div class="listItem">
+
+                <div class="listImage">
+                    <img src="./images/item_04.png" alt="">
+                </div>
+
+                <p>退换货</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="tailFunc">
+
+        <div class="tailItem">
+
+            <div class="tailItemLeftBox">
+                <div class="tailItemImage">
+                    <img src="./images/icon_01.png" alt="">
+                </div>
+
+                <p>历史订单</p>
+            </div>
+
+            <div class="tailItemRightBox">
+                >
+            </div>
+
+        </div>
+
+        <div class="tailItem">
+
+            <div class="tailItemLeftBox">
+                <div class="tailItemImage">
+                    <img src="./images/icon_02.png" alt="">
+                </div>
+
+                <p>购物车</p>
+            </div>
+
+            <div class="tailItemRightBox">
+                >
+            </div>
+
+        </div>
+
+        <div class="tailItem">
+
+            <div class="tailItemLeftBox">
+                <div class="tailItemImage">
+                    <img src="./images/icon_03.png" alt="">
+                </div>
+
+                <p>地址管理</p>
+            </div>
+
+            <div class="tailItemRightBox">
+                >
+            </div>
+
+        </div>
+
+        <div class="tailItem">
+
+            <div class="tailItemLeftBox">
+                <div class="tailItemImage">
+                    <img src="./images/icon_04.png" alt="">
+                </div>
+
+                <p>客服热线</p>
+            </div>
+
+            <div class="tailItemRightBox">
+                >
+            </div>
+
+        </div>
+    </div>
+
+    <p class="recommand">专属推荐</p>
+
+    <div class="goodsImage">
+
+        <div class="goodsImageItem">
+            <img src="./images/ad-001.png" alt="">
+        </div>
+
+        <div class="goodsImageItem">
+            <img src="./images/ad-002.png" alt="">
+        </div>
+
+
+        <div class="goodsImageItem">
+            <img src="./images/ad-003.png" alt="">
+        </div>
+
+        <div class="goodsImageItem">
+            <img src="./images/ad-004.png" alt="">
+        </div>
+
+
+        <div class="goodsImageItem">
+            <img src="./images/ad-005.png" alt="">
+        </div>
+
+        <div class="goodsImageItem">
+            <img src="./images/ad-006.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="tabbarContainer">
+
+        <a href="./index.html">
+
+            <div class="tabbarItem">
+                <i class="icon iconfont icon-shouye"></i>
+                <span>首页</span>
+            </div>
+
+        </a>
+
+      <a href="./list.html">
+        <div class="tabbarItem">
+            <i class="icon iconfont icon-fenlei"></i>
+            <span>列表</span>
+        </div>
+      </a>
+
+
+        <label for="rd6">
+
+            <div class="tabbarItem">
+                <i class="icon iconfont icon-gouwuche"></i>
+                <span>购物车</span>
+            </div>
+        </label>
+
+
+
+        <a href="./personInfo.html">
+
+            <div class="tabbarItem">
+                <i class="icon iconfont icon-wode"></i>
+                <span>我的</span>
+            </div>
+
+        </a>
+    </div>
+</body>
+
+<script src="./js/less.js"></script>
+
+</html>
